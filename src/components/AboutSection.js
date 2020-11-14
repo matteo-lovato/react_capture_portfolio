@@ -3,7 +3,7 @@ import home1 from "../img/home1.png";
 
 function AboutSection() {
   return (
-    <div className="about__section">
+    <div className="aboutSection">
       <div className="about__description">
         <div className="about__title">
           <div className="about__title--hide">
