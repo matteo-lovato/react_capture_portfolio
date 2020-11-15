@@ -1,8 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+import { StyledSection } from "../styles";
 
 function FaqSection() {
   return (
-    <div className="faqSection">
+    <Faq>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -15,6 +17,7 @@ function FaqSection() {
             aperiam!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="faq__question">
         <h4>Daily Schedule</h4>
@@ -25,6 +28,7 @@ function FaqSection() {
             aperiam!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="faq__question">
         <h4>Different Payment Methods</h4>
@@ -35,6 +39,7 @@ function FaqSection() {
             aperiam!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="faq__question">
         <h4>What Product Do You Offer</h4>
@@ -45,9 +50,38 @@ function FaqSection() {
             aperiam!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
-    </div>
+    </Faq>
   );
 }
+
+const Faq = styled(StyledSection)`
+  display: block;
+  span {
+    display: block;
+  }
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: lighter;
+  }
+  .faq-line {
+    background: #cccccc;
+    height: 0.2rem;
+    margin: 2rem 0rem;
+    width: 100%;
+  }
+  .faq__question {
+    padding: 3rem 0rem;
+    cursor: pointer;
+  }
+
+  .faq__answer {
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+    }
+  }
+`;
 
 export default FaqSection;
