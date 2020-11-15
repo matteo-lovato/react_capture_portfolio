@@ -11,7 +11,7 @@ import {
 
 function AboutSection() {
   return (
-    <StyledSection>
+    <About>
       <StyledDescription>
         <div className="about__title">
           <StyledHide>
@@ -35,8 +35,10 @@ function AboutSection() {
       <StyledImage>
         <img src={home1} alt="professional photographer with a camera" />
       </StyledImage>
-    </StyledSection>
+    </About>
   );
 }
+
+const About = styled(StyledSection)``;
 
 export default AboutSection;
