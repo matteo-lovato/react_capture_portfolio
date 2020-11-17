@@ -9,6 +9,7 @@ import {
   StyledImage,
 } from "../styles";
 import { motion } from "framer-motion";
+import { fade, photoAnimation, titleAnimation } from "../animation";
 
 function AboutSection() {
   return (
@@ -16,25 +17,29 @@ function AboutSection() {
       <StyledDescription>
         <motion.div>
           <StyledHide>
-            <motion.h2>We work to make</motion.h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2>
+            <motion.h2 variants={titleAnimation}>
               your <span>dreams</span> come
             </motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2>true.</motion.h2>
+            <motion.h2 variants={titleAnimation}>true.</motion.h2>
           </StyledHide>
-          <p>
+          <motion.p variants={fade}>
             Contact us for any photography or videography ideas that you have.
             We have professionals with amazing skills.
-          </p>
-          <button>Contact Us</button>
+          </motion.p>
+          <motion.button variants={fade}>Contact Us</motion.button>
         </motion.div>
       </StyledDescription>
       <StyledImage>
-        <img src={home1} alt="professional photographer with a camera" />
+        <motion.img
+          variants={photoAnimation}
+          src={home1}
+          alt="professional photographer with a camera"
+        />
       </StyledImage>
     </About>
   );
