@@ -8,29 +8,30 @@ import {
   StyledHide,
   StyledImage,
 } from "../styles";
+import { motion } from "framer-motion";
 
 function AboutSection() {
   return (
     <About>
       <StyledDescription>
-        <div className="about__title">
+        <motion.div>
           <StyledHide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>
+            <motion.h2>
               your <span>dreams</span> come
-            </h2>
+            </motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>true.</h2>
+            <motion.h2>true.</motion.h2>
           </StyledHide>
           <p>
             Contact us for any photography or videography ideas that you have.
             We have professionals with amazing skills.
           </p>
           <button>Contact Us</button>
-        </div>
+        </motion.div>
       </StyledDescription>
       <StyledImage>
         <img src={home1} alt="professional photographer with a camera" />
