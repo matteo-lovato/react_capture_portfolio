@@ -10,6 +10,7 @@ import {
 } from "../styles";
 import { motion } from "framer-motion";
 import { fade, photoAnimation, titleAnimation } from "../animation";
+import Wave from "./Wave";
 
 function AboutSection() {
   return (
@@ -41,6 +42,7 @@ function AboutSection() {
           alt="professional photographer with a camera"
         />
       </StyledImage>
+      <Wave />
     </About>
   );
 }
