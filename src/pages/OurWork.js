@@ -13,7 +13,13 @@ import { pageAnimation } from "../animation";
 
 function OurWork() {
   return (
-    <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
+    <Work
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{ background: "#fff" }}
+    >
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
