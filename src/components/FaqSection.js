@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { StyledSection } from "../styles";
 import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 function FaqSection() {
   return (
@@ -9,42 +10,50 @@ function FaqSection() {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle title="How Do I Start?">
-        <div className="faq__answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            aperiam!
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="Daily Schedule">
-        <div className="faq__answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            aperiam!
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="Different Payment Methods">
-        <div className="faq__answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            aperiam!
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="What Product Do You Offer">
-        <div className="faq__answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            aperiam!
-          </p>
-        </div>
-      </Toggle>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
+          <div className="faq__answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              aperiam!
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
+      <AnimateSharedLayout>
+        <Toggle title="Daily Schedule">
+          <div className="faq__answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              aperiam!
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
+      <AnimateSharedLayout>
+        <Toggle title="Different Payment Methods">
+          <div className="faq__answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              aperiam!
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
+      <AnimateSharedLayout>
+        <Toggle title="What Product Do You Offer">
+          <div className="faq__answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              aperiam!
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 }
