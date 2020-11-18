@@ -9,56 +9,40 @@ function FaqSection() {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle>
-        <div className="faq__question">
-          <h4>How Do I Start?</h4>
-          <div className="faq__answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              aperiam!
-            </p>
-          </div>
-          <div className="faq-line"></div>
+      <Toggle title="How Do I Start?">
+        <div className="faq__answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            aperiam!
+          </p>
         </div>
       </Toggle>
-      <Toggle>
-        <div className="faq__question">
-          <h4>Daily Schedule</h4>
-          <div className="faq__answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              aperiam!
-            </p>
-          </div>
-          <div className="faq-line"></div>
+      <Toggle title="Daily Schedule">
+        <div className="faq__answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            aperiam!
+          </p>
         </div>
       </Toggle>
-      <Toggle>
-        <div className="faq__question">
-          <h4>Different Payment Methods</h4>
-          <div className="faq__answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              aperiam!
-            </p>
-          </div>
-          <div className="faq-line"></div>
+      <Toggle title="Different Payment Methods">
+        <div className="faq__answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            aperiam!
+          </p>
         </div>
       </Toggle>
-      <Toggle>
-        <div className="faq__question">
-          <h4>What Product Do You Offer</h4>
-          <div className="faq__answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              aperiam!
-            </p>
-          </div>
-          <div className="faq-line"></div>
+      <Toggle title="What Product Do You Offer">
+        <div className="faq__answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            aperiam!
+          </p>
         </div>
       </Toggle>
     </Faq>
