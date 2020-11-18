@@ -10,7 +10,6 @@ import { pageAnimation } from "../animation";
 function MovieDetails() {
   const history = useHistory();
   const url = history.location.pathname;
-  console.log(url);
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
   // useEffect
