@@ -32,6 +32,9 @@ const StyledNav = styled.nav`
   margin: auto;
   align-items: center;
   padding: 1rem 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   background: #282828;
   a {
     color: white;
