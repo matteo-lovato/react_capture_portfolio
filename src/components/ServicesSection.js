@@ -70,11 +70,17 @@ const Services = styled(StyledSection)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  @media (max-width: 1300px) {
+    justify-content: centrer;
+  }
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: centrer;
+  }
 `;
 
 const Card = styled.div`
